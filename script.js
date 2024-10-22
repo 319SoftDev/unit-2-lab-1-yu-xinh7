@@ -16,26 +16,37 @@ let shoes = 89.78;
 
 
 // 1. If divided evenly, how much would each sibling get for the week?
-
+newAllowance = weeklyAllowance/3;
+console.log(newAllowance);
 // 2. How many games can Jordan buy with their cut?
-
+jordansGames = newAllowance / game;
+console.log(jordansGames);
 // 3. The cost of games just went up by a dollar and shoes are on sale at 50% (half) off. Change the variables to their new prices.
-
+newsGames= game + 1;
+newShoes = shoes / 2; 
+console.log(newsGames,newShoes);
 // 4. Quinn and Ricardo are twins. If they put their money together, how many on sale shoes can they buy in a month (4 weeks)?
-
+twins= (newAllowance + newAllowance) * 4 / newShoes;
+console.log(twins);
 // 5. How many more games can they buy if they put their money together compared to if they had bought games on their own?
-
+twinsGames = (newAllowance + newAllowance)/newGames
+console.log(twinsGames);
 // 6. Print out the three siblings' names. "The three siblings are __, __, and ___."
-
+console.log("The three siblings are Jordan, Quinn, and Ricardo Montoya De La Rosa Ramirez.");
+    
 // 7. Use console.log() and a built-in method to count how many characters are in Ricardo's name.
-
+let name = "Ricardo";
+console.log(name.lenth);
 // 8. Use console.log() and a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
-
+console.log("RICARDO MONTOYA DE LA ROSA RAMIREZ");
 // 9. Use console.log() and a built-in method to print out the string "ricardo montoya de la rosa ramirez"
+console.log("ricardo montoya de la rosa ramirez");
 
 // 10. Use console.log() and a built-in method to print out Ricardo's name, but with all the instances of the letter a removed or deleted.
-
+let name ="Ricardo";
+console.log(name.replaceAll("a", ""));
 // 11. Use console.log() and a built-in method to print out "De La Rosa"
+console.log("De La Rosa");
 
 // Medium Challenges
 
