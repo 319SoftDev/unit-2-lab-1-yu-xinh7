@@ -152,16 +152,22 @@ const numBurgers = (budget/burger);
         return 'You can buy ${numBurgers} burgers.';
     }
 }
-console.log(buyBurgers(11));
+console.log(buyBurgers(21));
+    
 // 16. A meal consists of 1 burger, 1 fry, and 1 soda.
 /// Write a function called buyMeals(budget) that tells the user how many meals they can buy and how much money they will have left over.
 /// Bonus: Round the answer to the nearest penny.
 let meal = burger + fry + soda
 const buyMeals = (budget) => {
-   
-}
+   if (budget < meal) {
+       return "Sorry, you don't have enough $ for a meal."
+   }else{
+       const leftOver = (budget / meal).toFixed(2);
+       return ' You can buy this many meals and you will have this much money $(leftOver) left.';
+   }
+};
 
-
+console.log(buyMeals);
 // 17. [Challenge] Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
 /// The larger side should be the hypotenuse  
 
